@@ -131,11 +131,11 @@
                 <body name="upper_arm_right" pos="0 -.17 .06">
                     <joint name="shoulder1_right" axis="1 0 0"  class="shoulder"/>
                     <joint name="shoulder2_right" axis="0 1 0" class="shoulder"/>
-                    <geom name="upper_arm_right" fromto="0 0 0 0 -.02 -.2" class="arm_upper"/>
-                    <body name="lower_arm_right" pos="0 -.02 -.2">
+                    <geom name="upper_arm_right" fromto="0 0 0 0 -.2 -0.02" class="arm_upper"/>
+                    <body name="lower_arm_right" pos="0 -.2 -.02">
                         <joint name="elbow_right" axis="0 -1 1" class="elbow"/>
-                        <geom name="lower_arm_right" fromto="-.01 0 .01 .01 -.01 -.2" class="arm_lower"/>
-                        <body name="hand_right" pos=".01 -.01 -.25">
+                        <geom name="lower_arm_right" fromto="-.01 0 .01 .01 -.2 -.01" class="arm_lower"/>
+                        <body name="hand_right" pos=".01 -.25 -.01">
                             <geom name="hand_right" zaxis="1 1 1" class="hand"/>
                         </body>
                     </body>
@@ -143,11 +143,11 @@
                 <body name="upper_arm_left" pos="0 .17 .06">
                     <joint name="shoulder1_left" axis="1 0 0" class="shoulder"/>
                     <joint name="shoulder2_left" axis="0 1 0"  class="shoulder"/>
-                    <geom name="upper_arm_left" fromto="0 0 0 0 .02 -.2" class="arm_upper"/>
-                    <body name="lower_arm_left" pos="0 .02 -.2">
+                    <geom name="upper_arm_left" fromto="0 0 0 0 .2 -.02" class="arm_upper"/>
+                    <body name="lower_arm_left" pos="0 .2 -.02">
                         <joint name="elbow_left" axis="0 -1 -1" class="elbow"/>
-                        <geom name="lower_arm_left" fromto="-.01 0 .01 .01 .01 -.2" class="arm_lower"/>
-                        <body name="hand_left" pos=".01 .01 -.25">
+                        <geom name="lower_arm_left" fromto="-.01 0 .01 .01 .2 -.01" class="arm_lower"/>
+                        <body name="hand_left" pos=".01 .25 -.01">
                             <geom name="hand_left" zaxis="1 -1 1" class="hand"/>
                         </body>
                     </body>
