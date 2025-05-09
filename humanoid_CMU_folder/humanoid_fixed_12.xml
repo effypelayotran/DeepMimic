@@ -69,15 +69,15 @@
       <!-- joints -->
       <joint type="hinge" damping=".2" stiffness="1" armature=".01" limited="true" solimplimit="0 .99 .01"/>
       <default class="joint_big">
-        <joint damping="0" stiffness="0"/>
+        <joint damping="5" stiffness="10"/>
         <default class="hip_x">
-          <joint range="-150 150"/>
+          <joint range="-30 10"/>
         </default>
         <default class="hip_z">
-          <joint range="-150 150"/>
+          <joint range="-60 35"/>
         </default>
         <default class="hip_y">
-          <joint axis="0 1 0" range="-150 150"/>
+          <joint axis="0 1 0" range="-50 75"/>
         </default>
         <default class="joint_big_stiff">
           <joint stiffness="20"/>
@@ -129,8 +129,9 @@
                     <camera name="egocentric" pos=".09 0 0" xyaxes="0 -1 0 .1 0 1" fovy="80"/>
                 </body>
                 <body name="upper_arm_right" pos="0 -.17 .06">
-                    <joint name="shoulder1_right" axis="1 0 0"  class="shoulder"/>
-                    <joint name="shoulder2_right" axis="0 0 1" class="shoulder"/>
+                    <joint name="shoulderz_right" axis="0 0 1"  class="shoulder"/>
+                    <joint name="shouldery_right" axis="0 1 0" class="shoulder"/>
+                    <joint name="shoulderx_right" axis="1 0 0" class="shoulder"/>
                     <geom name="upper_arm_right" fromto="0 0 0 0 -.2 -0.02" class="arm_upper"/>
                     <body name="lower_arm_right" pos="0 -.2 -.02">
                         <joint name="elbow_right" axis="0 0 1" class="elbow"/>
@@ -141,8 +142,9 @@
                     </body>
                 </body>
                 <body name="upper_arm_left" pos="0 .17 .06">
-                    <joint name="shoulder1_left" axis="1 0 0" range="-90 60" class="shoulder"/>
-                    <joint name="shoulder2_left" axis="0 0 1"  range="-90 60" class="shoulder"/>
+                    <joint name="shoulderz_left" axis="0 0 1" range="-90 60" class="shoulder"/>
+                    <joint name="shouldery_left" axis="0 1 0"  range="-90 60" class="shoulder"/>
+                    <joint name="shoulderx_left" axis="1 0 0"  range="-90 60" class="shoulder"/>
                     <geom name="upper_arm_left" fromto="0 0 0 0 .2 -.02" class="arm_upper"/>
                     <body name="lower_arm_left" pos="0 .2 -.02">
                         <joint name="elbow_left" axis="0 0 -1" class="elbow"/>
@@ -157,8 +159,8 @@
 
         <body name="thigh_right" pos="0 -.1 -.04">
             <joint name="hip_x_right" axis="1 0 0" class="hip_x"/>
-            <joint name="hip_z_right" axis="0 0 1" class="hip_z"/>
             <joint name="hip_y_right" class="hip_y"/>
+            <joint name="hip_z_right" axis="0 0 1" class="hip_z"/>
             <geom name="thigh_right" fromto="0 0 0 0 .01 -.34" class="thigh"/>
             <body name="shin_right" pos="0 .01 -.4">
                 <joint name="knee_right" class="knee"/>
@@ -173,9 +175,9 @@
         </body>
 
         <body name="thigh_left" pos="0 .1 -.04">
-            <joint name="hip_x_left" axis="-1 0 0" class="hip_x"/>
-            <joint name="hip_z_left" axis="0 0 -1" class="hip_z"/>
+            <joint name="hip_x_left" axis="1 0 0" class="hip_x"/>
             <joint name="hip_y_left" class="hip_y"/>
+            <joint name="hip_z_left" axis="0 0 -1" class="hip_z"/>
             <geom name="thigh_left" fromto="0 0 0 0 -.01 -.34" class="thigh"/>
             <body name="shin_left" pos="0 -.01 -.4">
                 <joint name="knee_left" class="knee"/>
@@ -228,22 +230,24 @@
     <motor name="abdomen_z"       gear="40"  joint="abdomen_z"/>
     <motor name="torso_y"       gear="40"  joint="torso_y"/>
     <motor name="hip_x_right"     gear="40"  joint="hip_x_right"/>
-    <motor name="hip_z_right"     gear="40"  joint="hip_z_right"/>
-    <motor name="hip_y_right"     gear="120" joint="hip_y_right"/>
+    <motor name="hip_y_right"     gear="120"  joint="hip_y_right"/>
+    <motor name="hip_z_right"     gear="40" joint="hip_z_right"/>
     <motor name="knee_right"      gear="80"  joint="knee_right"/>
     <motor name="ankle_x_right"   gear="20"  joint="ankle_x_right"/>
     <motor name="ankle_y_right"   gear="20"  joint="ankle_y_right"/>
     <motor name="hip_x_left"      gear="40"  joint="hip_x_left"/>
-    <motor name="hip_z_left"      gear="40"  joint="hip_z_left"/>
-    <motor name="hip_y_left"      gear="120" joint="hip_y_left"/>
+    <motor name="hip_y_left"      gear="120"  joint="hip_z_left"/>
+    <motor name="hip_z_left"      gear="40" joint="hip_y_left"/>
     <motor name="knee_left"       gear="80"  joint="knee_left"/>
     <motor name="ankle_x_left"    gear="20"  joint="ankle_x_left"/>
     <motor name="ankle_y_left"    gear="20"  joint="ankle_y_left"/>
-    <motor name="shoulder1_right" gear="20"  joint="shoulder1_right"/>
-    <motor name="shoulder2_right" gear="20"  joint="shoulder2_right"/>
+    <motor name="shoulderz_right" gear="20"  joint="shoulderz_right"/>
+    <motor name="shouldery_right" gear="20"  joint="shouldery_right"/>
+    <motor name="shoulderx_right" gear="20"  joint="shoulderx_right"/>
     <motor name="elbow_right"     gear="40"  joint="elbow_right"/>
-    <motor name="shoulder1_left"  gear="20"  joint="shoulder1_left"/>
-    <motor name="shoulder2_left"  gear="20"  joint="shoulder2_left"/>
+    <motor name="shoulderz_left"  gear="20"  joint="shoulderz_left"/>
+    <motor name="shouldery_left"  gear="20"  joint="shouldery_left"/>
+    <motor name="shoulderx_left"  gear="20"  joint="shoulderx_left"/>
     <motor name="elbow_left"      gear="40"  joint="elbow_left"/>
   </actuator>
 
@@ -257,17 +261,6 @@
       left leg
       arms
     -->
-    <key name="squat" qpos="0 0 0.596
-                            0.988015 0 0.154359 0
-                            0 0.4 0
-                            -0.25 -0.5 -2.5 -2.65 -0.8 0.56
-                            -0.25 -0.5 -2.5 -2.65 -0.8 0.56
-                            0 0 0 0 0 0"/>
-    <key name="stand_on_left_leg" qpos="0 0 1.21948
-                                        0.971588 -0.179973 0.135318 -0.0729076
-                                        -0.0516 -0.202 0.23
-                                        -0.24 -0.007 -0.34 -1.76 -0.466 -0.0415
-                                        -0.08 -0.01 -0.37 -0.685 -0.35 -0.09
-                                        0.109 -0.067 -0.7 -0.05 0.12 0.16"/>
+ 
   </keyframe>
 </mujoco>
