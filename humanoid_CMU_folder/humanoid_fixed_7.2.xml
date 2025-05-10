@@ -77,7 +77,7 @@
           <joint range="-70 35"/>
         </default>
         <default class="hip_y">
-          <joint axis="0 1 0" range="-120 120"/>
+          <joint axis="0 1 0" range="-140 140"/>
         </default>
         <default class="joint_big_stiff">
           <joint stiffness="20"/>
