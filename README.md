@@ -1,6 +1,6 @@
-# mujoco_resources
+# DeepMimic
 
-# Effy-M
+# Team Name: Effy-M
 
 **Team Members**
 
