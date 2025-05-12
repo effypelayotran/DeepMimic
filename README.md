@@ -2,11 +2,11 @@
 
 # Effy-M
 
-**Rainer Gardner-Olesen**
+**Team Members**
 
-**Anna Le**
-
-**Effy Pelayo Tran**
+Rainer Gardner-Olesen,
+Anna Le,
+Effy Pelayo Tran
 
 ### Paper
 
@@ -26,11 +26,11 @@ https://xbpeng.github.io/projects/DeepMimic/index.html
 
 
 
-###Results
+### Results
 
 ![Alt Text](comparison.gif)
 
-###Presentation Slides
+### Presentation Slides
 https://docs.google.com/presentation/d/1fNaSF0vc3GV75YXFUuxBOuI8nCAfdlioqXwulEFPVus/edit
 
-###Code
+### Code
