@@ -2,8 +2,10 @@
 
 # Effy-M
 
-# ****Rainer Gardner-Olesen****
-Anna Le
+**Rainer Gardner-Olesen**
+
+**Anna Le**
+
 **Effy Pelayo Tran**
 
 ### Paper
