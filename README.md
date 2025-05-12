@@ -1,9 +1,16 @@
 # mujoco_resources
 
-The form asks you to provide a link to a Github repository that contains your code and a README. The repository should be public*, and the README should include:
-Your project group name
-The names of all group members
-The title of, authors of, and a link to the paper you implemented
+Effy-M
+
+****Rainer Gardner-Olesen****
+Anna Le
+**Effy Pelayo Tran**
+
+DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills
+written by Xue Bin Peng, Pieter Abbeel, Sergey Levine, Michiel van de Panne (University of California, Berkeley, University of British Columbia)
+Siggraph 2018
+https://xbpeng.github.io/projects/DeepMimic/index.html
+
 At least one representative image or video demonstrating your results
 A copy of / link to your presentation slides
 If you elect to upload a copy of the slides to your repo, they should be in .pptx format.
